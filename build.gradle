@@ -22,13 +22,11 @@ sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
+    compile('org.projectlombok:lombok')
     compile('org.springframework.boot:spring-boot-starter-web')
     testCompile('org.springframework.boot:spring-boot-starter-test')
-}
-
-tasks.test {
-    useJUnitPlatform()
 }
