@@ -11,8 +11,8 @@ import javax.persistence.Id;
 @NoArgsConstructor
 @Entity
 public class Posts {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // Primary key
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // Auto-increment key value
     private Long id;
 
     @Column(length = 500, nullable = false)
